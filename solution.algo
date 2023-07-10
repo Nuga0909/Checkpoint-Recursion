@@ -1,0 +1,15 @@
+ALGORITHM is_palindrome(word)
+VAR
+    is_pal : BOOLEAN;
+BEGIN
+    IF (word.length <= 1) THEN
+        is_pal = true
+        return is_pal;
+    ELSE_IF (word[0] == word[word.length-1]) THEN
+        word = word.splice(first and last letter);
+        return is_palindrome(word)
+    ELSE
+        is_pal = false;
+        return is_pal
+    END_IF
+END
